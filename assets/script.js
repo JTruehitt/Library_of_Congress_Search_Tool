@@ -79,6 +79,10 @@ $(".searchBtn").click(function (e) {
   searchMethod = $("#searchMethod").val();
   console.log(searchMethod + searchText);
   queryLOC(searchMethod, searchText);
-  // location.replace("results.html")
+  location.replace("results.html" + "??" + searchMethod + "??" + searchText)
   
 });
+
+
+test = "hello=goodbye=help"
+console.log(test.split("=")[1])

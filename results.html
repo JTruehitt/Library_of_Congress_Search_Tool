@@ -12,32 +12,37 @@
       <h1>Library of Congress Search</h1>
     </header>
 
-  <form action="results.html" method="GET" class="searchContainer">
-    <input type="text" id="mainSearch" class="mainSearch" placeholder="Search for...">
-    <select name="searchSelect" id="searchMethod">
-      <option selected>Search through...</option>
-      <option value="search/?q=">Everything</option>
-      <option value="audio/?q=">Audio Recordings</option>
-      <option value="books/?q=">Books</option>
-      <option value="film-and-videos/?q=">Films, Videos</option>
-      <option value="manuscripts/?q=">Manuscripts</option>
-      <option value="maps/?q=">Maps</option>
-      <option value="notated-music/?q=">Notated Music</option>
-      <option value="newspapers/?q=">Newspapers</option>
-      <option value="photos/?q=">Photos</option>
-      <option value="websites/?q=">Web Pages</option>
-    </select>
-    <input type="submit" value="Search LOC" class="searchBtn">
-  </form>
-  
-  <div class="resultsContainer stack">
-  
-  </div>
+    <form action="results.html" method="GET" class="searchContainer">
+      <input
+        type="text"
+        id="mainSearch"
+        class="mainSearch"
+        placeholder="Search for..."
+      />
+      <select name="searchSelect" id="searchMethod">
+        <option selected>Search through...</option>
+        <option value="search/?q=">Everything</option>
+        <option value="audio/?q=">Audio Recordings</option>
+        <option value="books/?q=">Books</option>
+        <option value="film-and-videos/?q=">Films, Videos</option>
+        <option value="manuscripts/?q=">Manuscripts</option>
+        <option value="maps/?q=">Maps</option>
+        <option value="notated-music/?q=">Notated Music</option>
+        <option value="newspapers/?q=">Newspapers</option>
+        <option value="photos/?q=">Photos</option>
+        <option value="websites/?q=">Web Pages</option>
+      </select>
+      <input type="submit" value="Search LOC" class="searchBtn" />
+    </form>
 
+    <div class="resultsContainer stack"></div>
 
-    
     <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
-    <script src="./assets/script.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.4.min.js"
+      integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/results.js"></script>
   </body>
 </html>
